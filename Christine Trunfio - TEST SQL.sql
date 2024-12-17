@@ -1288,24 +1288,3 @@ inner join race_details rd3 on rd3.id_race = r.id
 inner join drivers d3 on rd3.id_driver = d3.id
 where rd1.end_pos = '1' and rd2.end_pos = '2' and rd3.end_pos = '3'
 order by r.date_race asc;
-
-select *
-from race_details
-where id_race = 25;
-
-select *
-from drivers;
-
-UPDATE `formula1`.`race_details` SET `start_pos` = '3' WHERE (`id` = '420');
-UPDATE `formula1`.`race_details` SET `start_pos` = '16' WHERE (`id` = '419');
-
-UPDATE `formula1`.`race_details` SET `start_pos` = '18' WHERE (`id` = '793');
-
-update race_details set start_pos = '19' where id = 100;
-
-UPDATE `formula1`.`race_details` SET `end_pos` = 'OUT' WHERE (`id` = '100');
-
-select count(Rating)
-from ratings
-where MovieID = 2628 and rating <= 3;
-
